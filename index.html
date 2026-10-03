@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praying Lips Foundation | Empowering Communities Through Tech & Care</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config Customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            800: '#166534',
+                            900: '#052e16',
+                            gold: '#d4af37',
+                            goldhover: '#b89628',
+                            dark: '#0a1912'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- OFFICIAL BRAND LOGO -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <img src="assets/image.png" alt="Praying Lips Foundation Logo" class="h-14 w-14 object-contain transition-transform group-hover:scale-105">
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-slate-900 text-lg leading-tight tracking-tight group-hover:text-brand-800 transition-colors">
+                            Praying Lips
+                        </span>
+                        <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">
+                            Foundation
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation (Includes Gallery) -->
+                <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+                    <a href="#home" class="hover:text-brand-800 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-brand-800 transition-colors">About Us</a>
+                    <a href="#vision-mission" class="hover:text-brand-800 transition-colors">Vision & Mission</a>
+                    <a href="#programmes" class="hover:text-brand-800 transition-colors">Programmes</a>
+                    <a href="#csr" class="hover:text-brand-800 transition-colors">CSR</a>
+                    <a href="#gallery" class="hover:text-brand-800 transition-colors">Gallery</a>
+                    <a href="#contact" class="hover:text-brand-800 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Donate Button CTA -->
+                <div class="hidden sm:flex items-center">
+                    <a href="#donations" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-gradient-to-r from-brand-gold to-yellow-600 text-white font-semibold text-sm shadow-md hover:shadow-lg hover:brightness-105 transition-all">
+                        <i class="fa-solid fa-heart mr-2 text-xs"></i> Donate Now
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="p-2 rounded-md text-slate-600 hover:text-brand-800 hover:bg-gray-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-4 space-y-2 text-base font-medium">
+            <a href="#home" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-brand-50 hover:text-brand-800">Home</a>
+            <a href="#about" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-brand-50 hover:text-brand-800">About Us</a>
+            <a href="#vision-mission" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-brand-50 hover:text-brand-800">Vision & Mission</a>
+            <a href="#programmes" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-brand-50 hover:text-brand-800">Programmes</a>
+            <a href="#csr" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-brand-50 hover:text-brand-800">CSR</a>
+            <a href="#gallery" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-brand-50 hover:text-brand-800">Gallery</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-brand-50 hover:text-brand-800">Contact</a>
+            <a href="#donations" class="block w-full text-center mt-2 px-5 py-2.5 rounded-full bg-brand-gold text-white font-semibold">Donate Now</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative bg-brand-dark overflow-hidden py-24 lg:py-32">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-800/60 border border-brand-500/30 text-brand-100 text-xs font-semibold tracking-wider uppercase mb-6 backdrop-blur-sm">
+                <i class="fa-solid fa-award text-brand-gold"></i> Non-Profit Foundation & Innovation Center
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto">
+                Transforming Lives Through <span class="bg-gradient-to-r from-yellow-300 via-brand-gold to-yellow-500 bg-clip-text text-transparent">Innovation & Compassion</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-light">
+                Empowering communities with technical skill development, incubation support, science research, and direct social welfare programs.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#donations" class="px-8 py-3.5 rounded-full bg-gradient-to-r from-brand-gold to-yellow-600 text-white font-bold text-base shadow-lg hover:shadow-yellow-500/20 hover:scale-105 transition-all">
+                    Support Our Programs
+                </a>
+                <a href="#programmes" class="px-8 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-base backdrop-blur-sm transition-all">
+                    Explore Verticals
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Logo Showcase Display -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <div class="relative w-full max-w-sm aspect-square rounded-3xl bg-brand-50/50 border border-brand-100 flex items-center justify-center p-8 shadow-lg group">
+                        <img src="assets/about us.jpg" alt="Praying Lips Foundation emblem" class="w-full h-full object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="absolute -bottom-6 -right-2 bg-brand-900 text-white p-5 rounded-2xl shadow-xl hidden sm:block border border-brand-800">
+                        <p class="text-2xl font-bold text-brand-gold">100%</p>
+                        <p class="text-xs text-slate-300 uppercase tracking-wider mt-0.5">Dedicated Impact</p>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 text-brand-800 font-bold text-xs uppercase tracking-widest mb-3">
+                        <i class="fa-solid fa-leaf text-brand-gold"></i> About Praying Lips Foundation
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+                        Bridging Education, Innovation, and Social Upliftment
+                    </h2>
+                    <p class="mt-4 text-slate-600 text-lg leading-relaxed">
+                        Praying Lips Foundation is a forward-thinking non-profit organization dedicated to fostering self-reliance, academic excellence, and humanitarian support across diverse communities.
+                    </p>
+                    <p class="mt-3 text-slate-600 text-base leading-relaxed">
+                        From school-level skill development and high-end technological incubation to corporate CSR partnerships and direct animal welfare drives, we build ecosystem-wide solutions for sustainable impact.
+                    </p>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-4 border-t border-slate-100 pt-6">
+                        <div class="flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg bg-brand-50 text-brand-800 font-bold">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Skill Mentorship</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">School & College Level</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg bg-brand-50 text-brand-800 font-bold">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Tech Incubation</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Robotics & Science R&D</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <section id="vision-mission" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold">Driven By Vision, Guided By Mission</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Vision Card -->
+                <div class="p-8 rounded-3xl bg-slate-800/60 border border-slate-700/60 backdrop-blur-md relative overflow-hidden group hover:border-brand-gold/50 transition-all">
+                    <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fa-solid fa-eye text-8xl text-white"></i>
+                    </div>
+                    <div class="w-12 h-12 rounded-xl bg-brand-gold/20 flex items-center justify-center text-brand-gold font-bold text-xl mb-6">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        To cultivate an empowered society where youth, research scholars, and vulnerable communities gain access to high-quality technical education, entrepreneurial opportunities, and compassionate social support.
+                    </p>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="p-8 rounded-3xl bg-slate-800/60 border border-slate-700/60 backdrop-blur-md relative overflow-hidden group hover:border-brand-gold/50 transition-all">
+                    <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fa-solid fa-bullseye text-8xl text-white"></i>
+                    </div>
+                    <div class="w-12 h-12 rounded-xl bg-brand-gold/20 flex items-center justify-center text-brand-gold font-bold text-xl mb-6">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        To deliver scalable skill development workshops, facilitate science and technology transfers, incubate innovations, and execute direct grass-root social and animal welfare drives with total transparency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE VERTICALS / PROGRAMMES -->
+    <section id="programmes" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-800 font-bold text-xs uppercase tracking-widest">What We Do</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Core Programmes & Verticals</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">School & College Training</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Micro-mentorship programs, skill development workshops, and career readiness sessions tailored for school pupils and university students.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-person-breastfeeding"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Women Empowerment</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Specialized skill-training initiatives focused on financial independence, vocational skills, and entrepreneurship support for women.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Incubation & Startup Support</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Providing foundational guidance, office resources, and mentorship for early-stage social impact innovations and technological ventures.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-flask font-bold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">R&D — Academic Support</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Supporting college students in research and project development, equipping them with prototyping components and guidance.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Science & Tech Transfer</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Accelerating knowledge transfer in cutting-edge domains like Robotics, Automation, and applied engineering solutions.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-paw"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Social & Animal Welfare</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Direct outreach providing grain distribution, meal drives, school supplies, and stray animal feeding & healthcare support.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CSR SECTION -->
+    <section id="csr" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-brand-900 via-emerald-950 to-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+                <div class="relative z-10 max-w-3xl">
+                    <span class="inline-block px-3 py-1 rounded-md bg-brand-gold/20 text-brand-gold text-xs font-bold uppercase tracking-widest mb-4">CSR Partnerships</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">Partner With Us For Corporate Social Responsibility</h2>
+                    <p class="mt-4 text-slate-300 text-base leading-relaxed">
+                        We collaborate with corporate partners to implement scalable, measurable, and impactful CSR campaigns spanning technological education, skill empowerment, and environmental & animal care.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#contact" class="px-6 py-3 rounded-full bg-brand-gold hover:bg-yellow-600 text-white font-bold text-sm transition-all shadow-md">
+                            Collaborate on CSR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ==================== GALLERY SECTION ==================== -->
+<section id="gallery" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-brand-800 font-bold text-xs uppercase tracking-widest">
+                Our Moments
+            </span>
+
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+                Gallery
+            </h2>
+
+            <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+
+            <p class="mt-5 text-slate-600 text-base leading-relaxed">
+                A glimpse of our programmes, initiatives, events, and community activities.
+            </p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+            <!-- Photo 1 -->
+            <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="relative h-64 overflow-hidden bg-slate-100">
+                    <img 
+                        src="assets/women.jpg"
+                        alt="Women empowerment programme"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Women Empowerment
+                    </h3>
+                    <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                        We had the absolute honor and joy of interacting with the incredible women of WE Hub – a powerhouse community of aspiring and early-stage women entrepreneurs
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Photo 2 -->
+            <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="relative h-64 overflow-hidden bg-slate-100">
+                    <img 
+                        src="assets/Gallery2.jpg"
+
+                        alt="Community programme"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Community Outreach
+                    </h3>
+                    <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                      National IP Yatra 2025, organized by MSME DFO Hyderabad under the Ministry of MSME, Government of India, at the Telangana IAS Officers Institute, Greenlands, Begumpet.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Photo 3 -->
+            <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="relative h-64 overflow-hidden bg-slate-100">
+                    <img 
+                        src="assets/education.jpg"
+                        alt="Educational programme"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Education & Training
+                    </h3>
+                    <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                        Encouraging students and young people through education, mentorship, and skill development.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Photo 4 -->
+            <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="relative h-64 overflow-hidden bg-slate-100">
+                    <img 
+                        src="assets/startup.jpg"
+                        alt="Startup and incubation programme"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Startup & Innovation
+                    </h3>
+                    <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                        Encouraging innovation, entrepreneurship, incubation, and technology-driven solutions.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Photo 5 -->
+            <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="relative h-64 overflow-hidden bg-slate-100">
+                    <img 
+                        src="assets/welfare.jpg"
+                        alt="Social welfare activity"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Social Welfare
+                    </h3>
+                    <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                        Creating positive change through direct social welfare and community support activities.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Photo 6 -->
+            <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div class="relative h-64 overflow-hidden bg-slate-100">
+                    <img 
+                        src="assets/incubation.jpg"
+                        alt="Science and technology activity"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    >
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Science & Technology
+                    </h3>
+                    <p class="text-sm text-slate-500 mt-2 leading-relaxed">
+                        Promoting research, technology, innovation, and practical learning for future generations.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ==================== END GALLERY SECTION ==================== -->
+
+            
+
+               
+
+   
+                
+
+    <!-- ==================== DONATIONS SECTION ==================== -->
+    <section id="donations" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-gold font-bold text-xs uppercase tracking-widest">Make An Impact</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Support Our Causes</h2>
+                <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+                <p class="mt-5 text-slate-600 text-base leading-relaxed">
+                    Choose a donation plan below and complete your contribution through our donation form.
+                </p>
+            </div>
+
+            <!-- DONATION PLANS -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Plan 1 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-brand-gold hover:shadow-lg transition-all">
+                    <div class="text-xs font-bold text-brand-800 uppercase tracking-wider mb-2">Food Security</div>
+                    <div class="text-3xl font-extrabold text-slate-900 mb-2">₹1,500</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Grains Distribution</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Provides staple grains to underprivileged families for a full month.
+                    </p>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-brand-gold hover:shadow-lg transition-all">
+                    <div class="text-xs font-bold text-brand-800 uppercase tracking-wider mb-2">Animal Welfare</div>
+                    <div class="text-3xl font-extrabold text-slate-900 mb-2">₹25</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Cow Welfare Support</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Supports green fodder, maintenance, and medical aid for rescued cows.
+                    </p>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-brand-gold hover:shadow-lg transition-all">
+                    <div class="text-xs font-bold text-brand-800 uppercase tracking-wider mb-2">Education</div>
+                    <div class="text-3xl font-extrabold text-slate-900 mb-2">₹2,500</div>
+                    <h4 class="font-bold text-slate-800 mb-2">School Outfit & Kit</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Sponsors school uniform set, notebook, and stationery supplies.
+                    </p>
+                </div>
+
+                <!-- Plan 4 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-brand-gold hover:shadow-lg transition-all">
+                    <div class="text-xs font-bold text-brand-800 uppercase tracking-wider mb-2">Animal Care</div>
+                    <div class="text-3xl font-extrabold text-slate-900 mb-2">₹500</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Feed a Street Dog</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Covers nutritious daily meals and basic deworming care for stray dogs.
+                    </p>
+                </div>
+
+                <!-- Plan 5 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-brand-gold hover:shadow-lg transition-all">
+                    <div class="text-xs font-bold text-brand-800 uppercase tracking-wider mb-2">Hunger Relief</div>
+                    <div class="text-3xl font-extrabold text-slate-900 mb-2">₹100</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Feed A Meal</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Provides one hot, freshly prepared meal for a homeless individual.
+                    </p>
+                </div>
+
+                <!-- Plan 6 -->
+                <div class="bg-white p-6 rounded-2xl border-2 border-brand-gold/40 hover:shadow-lg transition-all relative">
+                    <span class="absolute top-3 right-3 bg-brand-gold text-white text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">New</span>
+                    <div class="text-xs font-bold text-brand-800 uppercase tracking-wider mb-2">STEM & Tech</div>
+                    <div class="text-3xl font-extrabold text-slate-900 mb-2">₹1,000</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Girl Child Tech Kit</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Provides basic micro-controller components and science learning kits.
+                    </p>
+                </div>
+
+                <!-- Plan 7 -->
+                <div class="bg-white p-6 rounded-2xl border-2 border-brand-gold/40 hover:shadow-lg transition-all relative">
+                    <span class="absolute top-3 right-3 bg-brand-gold text-white text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">New</span>
+                    <div class="text-xs font-bold text-brand-800 uppercase tracking-wider mb-2">R&D Support</div>
+                    <div class="text-3xl font-extrabold text-slate-900 mb-2">₹2,000</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Student Research Grant</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Funds prototyping components for college students building tech projects.
+                    </p>
+                </div>
+
+                <!-- Plan 8 -->
+                <div class="bg-white p-6 rounded-2xl border-2 border-brand-gold/40 hover:shadow-lg transition-all relative">
+                    <span class="absolute top-3 right-3 bg-brand-gold text-white text-[10px] font-bold px-2 py-0.5 rounded-md uppercase">New</span>
+                    <div class="text-xs font-bold text-brand-800 uppercase tracking-wider mb-2">Women Livelihood</div>
+                    <div class="text-3xl font-extrabold text-slate-900 mb-2">₹3,000</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Micro-Business Starter</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Equips a woman entrepreneur with basic starter tools.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+
+            <!-- GOOGLE FORM PLACEHOLDER -->
+
+<!-- DONATION FORM LINK -->
+<div class="mt-10 mb-16 px-4 text-center">
+    <p class="text-lg font-semibold text-slate-800 mb-4">
+        Ready to donate?
+    </p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5EHz4CF32g9d_HH8JL-3zx_tb9yQ4sxVFahCRf9px5weyZA/viewform?usp=header"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="text-brand-gold font-semibold underline underline-offset-4 hover:text-slate-800 transition">
+        Click here to fill the donation form
+    </a>
+</div>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-20 bg-slate-900 text-white">
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-brand-gold font-bold text-xs uppercase tracking-widest">Connect With Us</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Get In Touch</h2>
+                    <p class="mt-4 text-slate-400 text-base leading-relaxed">
+                        Have questions about our verticals, incubation programs, or CSR partnerships? Reach out to our foundation office directly.
+                    </p>
+                    
+                    <div class="mt-8 space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 text-brand-gold flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Phone Contact</p>
+                                <p class="text-lg font-bold text-white">+91 8978707207</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 text-brand-gold flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Official Email</p>
+                                <p class="text-lg font-bold text-white">info@prayinglipsfoundation.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl bg-slate-800 p-8 border border-slate-700">
+    <h3 class="text-2xl font-bold mb-6">Contact Us</h3>
+
+    <p class="text-slate-300 mb-6">
+        Have a question or want to get in touch with us?
+    </p>
+
+    <a href="https://forms.gle/xBz3ST9NVU4W3uAJ8"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="text-brand-gold font-semibold underline underline-offset-4 hover:text-white transition">
+        Click here to contact us
+    </a>
+</div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-800/60 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <img src="assets/image.png" alt="Logo" class="h-6 w-6 object-contain">
+                <span class="text-slate-400 font-semibold text-xs">Praying Lips Foundation</span>
+            </div>
+            <p>&copy; 2026 Praying Lips Foundation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
